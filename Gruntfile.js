@@ -68,7 +68,8 @@ module.exports = function (grunt) {
             '<%= config.app %>/{,*/}*.html',
             '.tmp/styles/{,*/}*.css',
             '<%= config.app %>/images/{,*/}*',
-            '.tmp/scripts/{,*/}*.js'
+            '.tmp/scripts/{,*/}*.js',
+            '<%= config.app %>/scripts/*'
           ],
           port: 9000,
           server: {
