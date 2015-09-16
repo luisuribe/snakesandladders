@@ -4,16 +4,26 @@ http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js
 */
 
 var grid = {
-    "1": { "x": '105px', "y": '-15px'},
-    "2": { "x": '175px', "y": '-15px'},
-    "3": { "x": '245px', "y": '-15px'},
-    "4": { "x": '305px', "y": '-15px'},
-    "5": { "x": '370px', "y": '-15px'},
-    "6": { "x": '435px', "y": '-15px'},
-    "7": { "x": '500px', "y": '-15px'},
-    "8": { "x": '575px', "y": '-15px'},
-    "9": { "x": '640px', "y": '-15px'},
-    "10": { "x": '705px', "y": '-15px'},
+    "1": { x: '30px', y: '-10px'},
+    "2": { x: '90px', y: '-10px'},
+    "3": { x: '150px', y: '-10px'},
+    "4": { x: '210px', y: '-10px'},
+    "5": { x: '270px', y: '-10px'},
+    "6": { x: '330px', y: '-10px'},
+    "7": { x: '390px', y: '-10px'},
+    "8": { x: '450px', y: '-10px'},
+    "9": { x: '510px', y: '-10px'},
+    "10": { x: '570px', y: '-10px'},
+    "11": { x: '30px', y: '-70px'},
+    "12": { x: '90px', y: '-70px'},
+    "13": { x: '150px', y: '-70px'},
+    "14": { x: '210px', y: '-70px'},
+    "15": { x: '270px', y: '-70px'},
+    "16": { x: '330px', y: '-70px'},
+    "17": { x: '390px', y: '-70px'},
+    "18": { x: '450px', y: '-70px'},
+    "19": { x: '510px', y: '-70px'},
+    "20": { x: '570px', y: '-70px'},
 };
 
 window.onload = function() {
@@ -22,7 +32,7 @@ window.onload = function() {
     console.log($box);
 
     $("#dice").click(function(){
-        var to = Math.floor((Math.random() * 4) + 1);
+        var to = Math.floor((Math.random() * 20) + 1);
         console.log(to);
         moveTween(to);
     });

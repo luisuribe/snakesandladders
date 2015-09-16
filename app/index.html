@@ -46,8 +46,8 @@
       #box {
         background-color: #88ce02;
         position: absolute;
-        top: 105px;
-        left: 15px;
+        top: 465px;
+        left: -15px;
         width: 20px;
         height: 20px;
         transform: translate(-50%, -50%);
@@ -55,13 +55,19 @@
       }   
 
       .grid {
-        background-color: #f00;
-        position: absolute;
+        background-color: #fff;
+        position: fixed;
         top: 100px;
         left: 100px;
         width: 600px; 
-        height: 120px;
+        height: 480px;
+        border-style: solid;
+        border-width: 2px;
       }   
+
+      .row {display:table-row; position: fixed; left: 115px; width: 600px; height: 60px}
+      .cell{display:table-cell; border-style: solid; border-width: 1px; width: 60px; height: 60px; padding: 2px}
+
     </style>
     
   </head>
@@ -88,14 +94,38 @@
     -->
     <div class="container">
       <div class="grid">
+        <div id="table">
+          <div class="row" style="top: 520px">
+            <div class="cell" style="background-color: #2E9AFE">1</div>
+            <div class="cell">2</div>
+            <div class="cell" style="background-color: #2E9AFE">3</div>
+            <div class="cell">4</div>
+            <div class="cell" style="background-color: #2E9AFE">5</div>
+            <div class="cell">6</div>
+            <div class="cell" style="background-color: #2E9AFE">7</div>
+            <div class="cell">8</div>
+            <div class="cell" style="background-color: #2E9AFE">9</div>
+            <div class="cell">10</div>
+          </div>
+          <div class="row" style="top: 460px">
+            <div class="cell">Item 1</div>
+            <div class="cell" style="background-color: #2E9AFE">1</div>
+            <div class="cell">2</div>
+            <div class="cell" style="background-color: #2E9AFE">1</div>            
+            <div class="cell">2</div>
+            <div class="cell" style="background-color: #2E9AFE">1</div>            
+            <div class="cell">2</div>
+            <div class="cell" style="background-color: #2E9AFE">1</div>            
+            <div class="cell">2</div>
+            <div class="cell" style="background-color: #2E9AFE">1</div>            
+          </div>
+        </div>      
         <div id="box">
         </div>        
       </div>
     </div>
 
-    <div id="dice">
-    Roll
-    </div>
+    <div id="dice">Roll</div>
 
     <!-- build:js scripts/main.js -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
