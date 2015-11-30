@@ -90,6 +90,18 @@
       .row {display:table-row; position: fixed; left: 115px; width: 600px; height: 60px}
       .cell{display:table-cell; border-style: solid; border-width: 1px; width: 60px; height: 60px; padding: 2px}
 
+      #messages { 
+        background-color: #f0f0f0;
+        position: fixed;
+        top: 100px;
+        left: 720px;
+        width: 300px; 
+        height: 480px;
+        border-style: solid;
+        border-width: 2px;
+        padding: 1px;
+      }   
+
     </style>
     
   </head>
@@ -228,8 +240,10 @@
       </div>
     </div>
 
-    <div id="dice1">Haga clic aquí para jugar</div>
-    <div id="dice2">Haga clic aquí para jugar</div>
+    <div id="dice1">Lanzar el dado para el jugador 1</div>
+    <div id="dice2">Lanzar el dado para el jugador 2</div>
+
+    <div id="messages"><strong>Bienvenido</strong></div>
 
     <!-- build:js scripts/main.js -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
